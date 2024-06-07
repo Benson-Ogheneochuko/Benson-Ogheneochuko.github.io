@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Sundanese:wght@400..700&display=swap');</style>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<title>Benson OgheneOchuko</title>
+	<link rel="icon" type="image/png" href="./images/build digital products.png">
+</head>
+<body class="scrollbar">
+	<header class="flex-container header" id='header'>
+		<p class="author">Benson OgheneOchuko</p>
+		<button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls='navigation' aria-expanded='false'>
+			<svg class= 'hamburger' viewBox='0 0 100 100' width='40' fill='var(--button-color)' stroke='var(--button-color)' stroke-width='.3rem' stroke-linecap='round'>
+				<line class='line line_top'
+					x1= '10' x2= '60' y1= '30' y2= '30'>
+				</line>
+				<line class='line line_center'
+					x1= '10' x2= '90' y1= '50' y2= '50'>
+				</line>
+				<line class='line line_bottom'
+					x1= '90' x2= '40' y1= '70' y2= '70'>
+				</line>
+			</svg>
+			<span class="visually-hidden">menu</span>
+		</button>
+		<nav class="nav" id="navigation">
+			<ul role='list' class="nav-list">
+				<li class="visually-hidden">
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul role='list'>
+		</nav>
+	</header>
+	<main>
+		<section class="grid-container hero-section ">
+			<div class="hero | flow span-2">
+				<h1 class="fs-h1" >Crafting Compelling Digital<br> Experiences</h1>
+				<p class="fs-regular" >creating visually stunning and user-friendly websites that<br>captivate audiences and drive engagement</p>
+				<button class="button" data-target="contact" >Contact Me</button>
+			</div>
+			<span class="hero-image focus-image"></span>
+		</section>
+
+		<section id="portfolio">
+			<span class="flex-container">
+				<h2 class="fs-h2 portfolio-h2">Exploring the Frontiers of Web Design  </h2>
+				<p class='portfolio-message'>Deliver stunning digital experiences to your users that adapt seamlessly across devices & prioritize usability while delivering value.</p>
+			</span>
+			<article class="grid-container flow">
+				<span class="section-image focus-image">
+				</span>
+				<div class="span-2 div-padding">
+					<h2 class="fs-h2">Portfolio Website</h2>
+					<p>A well crafted portfolio website showcasing modern web design principles and development best practices. </p><p>
+						This project exemplifies proficiency in creating accessible, responsive experiences with a focus on intuitive user interactions and long-term scalability.
+					</p>
+					<button class="button" data-target="contact">Contact Me</button>
+				</div>
+			</article>
+		</section>
+		<section class="contact flow" id="contact">
+			<h2 class="fs-h2">Let's get in touch</h2>
+			<div class="grid-container" >
+				<span class="focus-image imagery section-image"></span>
+				<form name="contact form" class="span-2 div-padding" action="https://getform.io/f/pbqgzzzb" method="POST" id="footer-form">
+					<input type="text" name="name" placeholder="name" required autocomplete="on">
+					<input type="email" name="email" placeholder="email" required autocomplete="on">
+					<textarea class="scrollbar" type="textarea" name="message" placeholder="message" required rows='3'></textarea>
+					<button type="submit" class="button form-button">Send</button>
+				</form>
+			</div>
+			<span id="copyright">
+				&copy; <span id="copyrightYear"></span> All Rights Reserved.
+			</span>
+	</main>
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
+
