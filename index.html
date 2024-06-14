@@ -52,19 +52,41 @@
 		<section id="portfolio">
 			<span class="flex-container">
 				<h2 class="fs-h2 portfolio-h2">Exploring the Frontiers of Web Design  </h2>
-				<p class='portfolio-message'>Deliver stunning digital experiences to your users that adapt seamlessly across devices & prioritize usability while delivering value.</p>
+				<p class='portfolio-message'>Deliver stunning digital experiences to your users that adapt across devices & prioritize usability while delivering value.</p>
 			</span>
-			<article class="grid-container flow">
-				<span class="section-image focus-image">
-				</span>
-				<div class="span-2 div-padding">
-					<h2 class="fs-h2">Portfolio Website</h2>
-					<p>A well crafted portfolio website showcasing modern web design principles and development best practices. </p><p>
-						This project exemplifies proficiency in creating accessible, responsive experiences with a focus on intuitive user interactions and long-term scalability.
-					</p>
-					<button class="button" data-target="contact">Contact Me</button>
-				</div>
-			</article>
+
+      <section class="flex-container portfolio_projects">
+	      <article class="flex-container project_card">
+	        <span class="project_card_details flow">
+	          <h2 class="fs-h3">Portfolio Website</h2>
+	          <p class="fs-body"> A well crafted portfolio website showcasing modern web design principles and development best practices. </p>
+	          <p class="fs-body">
+							This project exemplifies proficiency in creating accessible, responsive experiences with a focus on intuitive user interactions and long-term scalability.
+						</p>
+	        </span>
+	        <figure class="project_image_figure bg_image" style="background-image: url('images/portfolio-website-screenshot.png');">
+	          <figcaption>
+	            Responsive portfolio website
+	          </figcaption>
+	        </figure>
+	      </article>  
+
+	      <article class="flex-container project_card">
+	        <span class="project_card_details flow">
+	          <h2 class="fs-h3">Dynamic Reusable Form - vue.js</h2>
+	          <p class="fs-body"> A versatile Vue.js form component that dynamically adjusts its functionality based on provided data. It can switch between a sign-in/sign-up form and a custom form with any number of fields.</p>
+	          <p class="fs-body">
+							The form is fully responsive; submission endpoints and the form title are dynamically set according to the provided configuration, allowing for integration into various application contexts.
+						</p>
+	        </span>
+	        <figure class="project_image_figure bg_image" style="background-image: url('images/dynamic reusable form.png');">
+	          <figcaption>
+	            Responsive portfolio website
+	          </figcaption>
+	        </figure>
+	      </article>
+      </section>
+        
 		</section>
 		<section class="contact flow" id="contact">
 			<h2 class="fs-h2">Let's get in touch</h2>
@@ -80,6 +102,7 @@
 			<span id="copyright">
 				&copy; <span id="copyrightYear"></span> All Rights Reserved.
 			</span>
+    </section>
 	</main>
 	<script type="text/javascript" src="./script.js"></script>
 </body>
